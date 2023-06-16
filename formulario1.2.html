@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/style-form1.2.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <div class="fvideo">
+        <video src="assets/video/fondo1.2.mp4" muted autoplay loop></video>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="assets/img/Aquelarre-Flow4.png" alt="Logo Aquelarre Flow">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="Index1.4.html">Inicio</a></li>
+                <li><a href="#">Qué hacemos</a></li>
+                <li><a href="#">Nuestro equipo</a>
+                    <ul class="submenu">
+                        <li><a href="nico.html">Nicolás</a></li>
+                        <li><a href="mafer.html">Ma. Fernanda</a></li>
+                        <li><a href="isa.html">Isabel</a></li>
+                        <li><a href="bea.html">Beatriz</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav> 
+    </header>
+        <main>  
+            <section>
+                <h2>Formulario de contacto</h2>
+                <h3>Contáctate y resuelve tus dudas</h3>
+                    <form method="POST" action="mensaje.html">
+                        <label for="user-name">Nombre:<input type="text" name="user-name" id="" placeholder="Escribe tu nombre y apellido" required></label> 
+                        <label for="user-tel">Teléfono:<input type="tel" name="user-tel" id="" placeholder="+56988888888"></label> 
+                        <label for="user-mail">Correo:<input type="email" name="user-mail" id="" placeholder="nombre@ejemplo.com" required></label>
+                        <label for="who">Quiero contactarme con:
+                            <select name="who" id="" required>
+                                <option value="1">Selecciona una opción...</option>
+                                <option value="2">Todo el equipo de AquelarreFlow</option>
+                                <option value="3">María Fernanda Montañez</option>
+                                <option value="4">Isabel Benítez</option>
+                                <option value="5">Nicolás Alarcón</option>
+                                <option value="6">Beatriz Véliz</option>
+                            </select>
+                        </label>
+                        <label for="motiv">Asunto:
+                            <select name="motiv" id="" required>
+                                <option value="1">Selecciona una opción...</option>
+                                <option value="2">Más información sobre el servicio</option>
+                                <option value="3">Costos del servicio</option>
+                                <option value="4">Más información sobre el profesional</option>
+                                <option value="5">Contactar por un proyecto</option>
+                                <option value="6">Otro</option>
+                            </select>
+                        </label>
+                    <label for="mensage">Mensaje:<textarea rows="8" cols="50" placeholder="Escribe aquí tu mensaje..."></textarea></label>
+                       <input type="checkbox" required class="terminos"><label for="terminos"><a href="#">Acepo los términos y condiciones</a></label>
+                    <input type="submit" value="Enviar" id="boton" href="#mensaje-modal">  
+                </form>
+                <div id="mensaje-modal" class="modal">
+                    <div class="modal-contenido">
+                        <a href="">X</a>
+                        <h3>¡Hemos recibido tu mensaje con exito!</h3>
+                        <p>Nos contactaremos contigo en las próximas 24hrs.</p>
+                    </div>  
+                </div> 
+            </section>
+            <audio controls src="assets/Audio/Sonido.mp3"></audio>
+    </main>
+    <footer>
+        <ul class="colum-1"> 
+            <li>Contacto:</li>
+            <li><a href="tel:+56995479785">+56995479785</a></li>
+            <li><a href="mailto:contacto@aquelarreflow.cl">Contacto@aquelarreflow.cl</a></li>
+        </ul>
+        <a class="colum-middle" href="#">Términos y Condiciones</a>
+        <a class="colum-2" href="#">Política de Privacidad</a>
+    </footer>
+</body>
+</html>
